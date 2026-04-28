@@ -18,15 +18,6 @@ export default defineConfig({
 		emdash({
 			database: d1({ binding: "DB", session: "auto" }),
 			storage: r2({ binding: "MEDIA" }),
-			email: {
-				type: "smtp",
-				host: import.meta.env.SMTP_HOST || "mail.xn--tlo-fla.com",
-				port: parseInt(import.meta.env.SMTP_PORT || "587"),
-				user: import.meta.env.SMTP_USER || "noreply@tiranicida.ca",
-				pass: import.meta.env.SMTP_PASS || "",
-				from: import.meta.env.SMTP_FROM || "noreply@tiranicida.ca",
-				fromName: import.meta.env.SMTP_FROM_NAME || "TLAO",
-			},
 			plugins: [formsPlugin()],
 			// Sandboxed plugins + marketplace require paid Workers plan (Dynamic Workers)
 			// sandboxed: [webhookNotifierPlugin()],
