@@ -31,4 +31,34 @@
 	// 		"binding": "LOADER",
 	// 	},
 	// ],
+	"env": {
+		"production": {
+			"d1_databases": [
+				{
+					"binding": "DB",
+					"database_name": "tiranicida",
+					"database_id": "734bfa21-9b5d-418f-b2b8-090d3d7c032d"
+				}
+			],
+			"r2_buckets": [
+				{
+					"binding": "MEDIA",
+					"bucket_name": "tiranicida-media"
+				}
+			],
+			"kv_namespaces": [
+				{
+					"binding": "SESSION",
+					"id": "96d472470a3f48caa9b69d7895327553"
+				}
+			],
+			"vars": {
+				"SMTP_HOST": "mail.xn--tlo-fla.com",
+				"SMTP_PORT": "587",
+				"SMTP_USER": "hi@tiranicida.ca",
+				"SMTP_FROM": "hi@tiranicida.ca",
+				"SMTP_FROM_NAME": "TLAO"
+			}
+		},
+	},
 }
