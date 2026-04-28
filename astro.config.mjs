@@ -18,15 +18,6 @@ export default defineConfig({
 		emdash({
 			database: d1({ binding: "DB", session: "auto" }),
 			storage: r2({ binding: "MEDIA" }),
-			email: {
-				type: "smtp",
-				host: "mail.xn--tlo-fla.com",
-				port: 587,
-				user: "noreply@tiranicida.ca",
-				pass: "MfYIkNaJPweMIw1Y2xR6AFKM",
-				from: "noreply@tiranicida.ca",
-				fromName: "TLAO",
-			},
 			plugins: [formsPlugin()],
 			// Sandboxed plugins + marketplace require paid Workers plan (Dynamic Workers)
 			// sandboxed: [webhookNotifierPlugin()],
