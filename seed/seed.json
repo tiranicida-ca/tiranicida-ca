@@ -9,19 +9,7 @@
 
 	"settings": {
 		"title": "My Blog",
-		"tagline": "Thoughts on building for the web",
-		"auth": {
-			"provider": "magic-link",
-			"email": {
-				"type": "smtp",
-				"host": "$SMTP_HOST",
-				"port": "$SMTP_PORT",
-				"user": "$SMTP_USER",
-				"pass": "$SMTP_PASS",
-				"from": "$SMTP_FROM",
-				"fromName": "$SMTP_FROM_NAME"
-			}
-		}
+		"tagline": "Thoughts on building for the web"
 	},
 
 	"collections": [

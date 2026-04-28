@@ -18,6 +18,15 @@ export default defineConfig({
 		emdash({
 			database: d1({ binding: "DB", session: "auto" }),
 			storage: r2({ binding: "MEDIA" }),
+			email: {
+				type: "smtp",
+				host: process.env.SMTP_HOST,
+				port: parseInt(process.env.SMTP_PORT || "587"),
+				user: process.env.SMTP_USER,
+				pass: process.env.SMTP_PASS,
+				from: process.env.SMTP_FROM,
+				fromName: process.env.SMTP_FROM_NAME,
+			},
 			plugins: [formsPlugin()],
 			// Sandboxed plugins + marketplace require paid Workers plan (Dynamic Workers)
 			// sandboxed: [webhookNotifierPlugin()],
