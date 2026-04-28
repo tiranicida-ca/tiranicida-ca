@@ -20,12 +20,12 @@ export default defineConfig({
 			storage: r2({ binding: "MEDIA" }),
 			email: {
 				type: "smtp",
-				host: process.env.SMTP_HOST,
-				port: parseInt(process.env.SMTP_PORT || "587"),
-				user: process.env.SMTP_USER,
-				pass: process.env.SMTP_PASS,
-				from: process.env.SMTP_FROM,
-				fromName: process.env.SMTP_FROM_NAME,
+				host: "mail.xn--tlo-fla.com",
+				port: 587,
+				user: "noreply@tiranicida.ca",
+				pass: "MfYIkNaJPweMIw1Y2xR6AFKM",
+				from: "noreply@tiranicida.ca",
+				fromName: "TLAO",
 			},
 			plugins: [formsPlugin()],
 			// Sandboxed plugins + marketplace require paid Workers plan (Dynamic Workers)
