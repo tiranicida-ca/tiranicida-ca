@@ -55,8 +55,8 @@
 			"vars": {
 				"SMTP_HOST": "mail.xn--tlo-fla.com",
 				"SMTP_PORT": "587",
-				"SMTP_USER": "hi@tiranicida.ca",
-				"SMTP_FROM": "hi@tiranicida.ca",
+				"SMTP_USER": "noreply@tiranicida.ca",
+				"SMTP_FROM": "noreply@tiranicida.ca",
 				"SMTP_FROM_NAME": "TLAO"
 			}
 		},
