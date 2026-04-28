@@ -15,7 +15,14 @@
 	"r2_buckets": [
 		{
 			"binding": "MEDIA",
-			"bucket_name": "tiranicida-media","preview_bucket_name": "tiranicida-media",
+			"bucket_name": "tiranicida-media",
+			"preview_bucket_name": "tiranicida-media",
+		},
+	],
+	"kv_namespaces": [
+		{
+			"binding": "SESSION",
+			"id": "96d472470a3f48caa9b69d7895327553",
 		},
 	],
 	// Worker Loader for plugin sandboxing (requires paid Workers plan)
