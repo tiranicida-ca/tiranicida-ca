@@ -19,10 +19,10 @@ export default defineConfig({
 			database: d1({ binding: "DB", session: "auto" }),
 			storage: r2({ binding: "MEDIA" }),
 			plugins: [formsPlugin()],
-			// Sandboxed plugins require paid Workers plan (Dynamic Workers)
+			// Sandboxed plugins + marketplace require paid Workers plan (Dynamic Workers)
 			// sandboxed: [webhookNotifierPlugin()],
 			// sandboxRunner: sandbox(),
-			marketplace: "https://marketplace.emdashcms.com",
+			// marketplace: "https://marketplace.emdashcms.com",
 		}),
 	],
 	fonts: [
