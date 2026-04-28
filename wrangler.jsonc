@@ -18,10 +18,10 @@
 			"bucket_name": "tiranicida-media","preview_bucket_name": "tiranicida-media",
 		},
 	],
-	// Worker Loader for plugin sandboxing
-	"worker_loaders": [
-		{
-			"binding": "LOADER",
-		},
-	],
+	// Worker Loader for plugin sandboxing (requires paid Workers plan)
+	// "worker_loaders": [
+	// 	{
+	// 		"binding": "LOADER",
+	// 	},
+	// ],
 }

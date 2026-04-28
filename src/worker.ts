@@ -1,5 +1,6 @@
 import handler from "@astrojs/cloudflare/entrypoints/server";
 
-export { PluginBridge } from "@emdash-cms/cloudflare/sandbox";
+// PluginBridge requires paid Workers plan (Dynamic Workers)
+// export { PluginBridge } from "@emdash-cms/cloudflare/sandbox";
 
 export default handler;
