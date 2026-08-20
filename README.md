@@ -2,7 +2,7 @@
 
 Tiranicida.ca is an EmDash CMS site deployed as a Cloudflare Worker. This repository is a pnpm workspace monorepo managed with Turborepo.
 
-**Current release: `0.1.2`**
+**Current release: `0.1.3`**
 
 ## Workspace layout
 
@@ -51,4 +51,4 @@ The Cloudflare workflow deploys automatically on pushes to `main` (normally thro
 
 ## Admin email
 
-The included Resend provider delivers EmDash magic links. From an authenticated admin session, add the Resend API key in the provider settings and ensure the configured sender belongs to a verified Resend domain. If magic links are the only enabled login method, bootstrap a passkey or another administrator session before relying on the provider. The key is stored as an EmDash secret setting, not in this repository or Worker configuration.
+The included HTTPS relay provider delivers EmDash magic links through the verified `noreply@tiranicida.ca` relay account. Configure `EMAIL_RELAY_URL=https://relay.tiranicida.ca` and set `EMAIL_RELAY_TOKEN` as a Cloudflare Worker secret; it is never stored in the repository, EmDash settings, or the client bundle. If magic links are the only enabled login method, bootstrap a passkey or another administrator session before relying on the provider.
