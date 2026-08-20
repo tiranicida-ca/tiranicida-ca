@@ -26,6 +26,7 @@
 		"release:check": "pnpm run guard:release && pnpm run ci",
 		"release:patch": "node scripts/prepare-patch-release.mjs",
 		"release:pr": "node scripts/create-release-pr.mjs",
+		"release:pr:sync": "node scripts/create-release-pr.mjs --sync",
 		"release:tag": "node scripts/create-release-tag.mjs",
 		"secrets:check": "versioning check-secrets",
 		"sync:release-readme": "node scripts/sync-release-readme.mjs",
