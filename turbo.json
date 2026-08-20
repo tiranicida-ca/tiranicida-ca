@@ -3,7 +3,11 @@
 	"tasks": {
 		"build": { "dependsOn": ["^build"], "outputs": ["dist/**", ".astro/**"] },
 		"clean": { "cache": false },
-		"deploy": { "dependsOn": ["build"], "cache": false },
+		"deploy": {
+			"dependsOn": ["build"],
+			"cache": false,
+			"env": ["CLOUDFLARE_API_TOKEN"]
+		},
 		"dev": { "cache": false, "persistent": true },
 		"typecheck": { "dependsOn": ["^typecheck"], "outputs": [] }
 	}
