@@ -1,0 +1,22 @@
+name: Security
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  gitleaks:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.24.4"
+      - name: Scan the checked-out source for secrets
+        run: |
+          go install github.com/zricethezav/gitleaks/v8@v8.30.0
+          "$HOME/go/bin/gitleaks" detect --source . --no-git --redact

@@ -1,11 +1,13 @@
-This is an EmDash site -- a CMS built on Astro with a full admin UI.
+This is an npm-workspaces monorepo. Its EmDash CMS site is in `apps/site` and is built with Astro and a full admin UI.
 
 ## Commands
 
 ```bash
-npx emdash dev        # Start dev server (runs migrations, seeds, generates types)
-npx emdash types      # Regenerate TypeScript types from schema
-npx emdash seed seed/seed.json --validate  # Validate seed file
+npm run dev                              # Start the site through Turborepo
+npm run ci                               # Run repository guards, typecheck, and build
+npm --workspace @tiranicida-ca/site run build
+npm exec --workspace @tiranicida-ca/site -- emdash types
+npm exec --workspace @tiranicida-ca/site -- emdash seed seed/seed.json --validate
 ```
 
 The admin UI is at `http://localhost:4321/_emdash/admin`.
@@ -14,12 +16,12 @@ The admin UI is at `http://localhost:4321/_emdash/admin`.
 
 | File                     | Purpose                                                                            |
 | ------------------------ | ---------------------------------------------------------------------------------- |
-| `astro.config.mjs`       | Astro config with `emdash()` integration, database, and storage                    |
-| `src/live.config.ts`     | EmDash loader registration (boilerplate -- don't modify)                           |
-| `seed/seed.json`         | Schema definition + demo content (collections, fields, taxonomies, menus, widgets) |
-| `emdash-env.d.ts`        | Generated types for collections (auto-regenerated on dev server start)             |
-| `src/layouts/Base.astro` | Base layout with EmDash wiring (menus, search, page contributions)                 |
-| `src/pages/`             | Astro pages -- all server-rendered                                                 |
+| `apps/site/astro.config.mjs`       | Astro config with `emdash()` integration, database, and storage                    |
+| `apps/site/src/live.config.ts`     | EmDash loader registration (boilerplate -- don't modify)                           |
+| `apps/site/seed/seed.json`         | Schema definition + demo content (collections, fields, taxonomies, menus, widgets) |
+| `apps/site/emdash-env.d.ts`        | Generated types for collections (auto-regenerated on dev server start)             |
+| `apps/site/src/layouts/Base.astro` | Base layout with EmDash wiring (menus, search, page contributions)                 |
+| `apps/site/src/pages/`             | Astro pages -- all server-rendered                                                 |
 
 ## Skills
 
