@@ -109,6 +109,10 @@ if (existingPrs.length > 0) {
 	process.exit(0);
 }
 
+if (synchronizeOnly) {
+	throw new Error("No open develop-to-main release pull request exists to synchronize.");
+}
+
 run("gh", [
 	"pr", "create", "--base", "main", "--head", "develop", "--title", title, "--body", body,
 ]);

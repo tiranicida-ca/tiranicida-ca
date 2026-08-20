@@ -42,5 +42,8 @@ export default defineConfig({
 			fallbacks: ["monospace"],
 		},
 	],
+	vite: {
+		cacheDir: process.env.ASTRO_VITE_CACHE_DIR ?? "./node_modules/.vite",
+	},
 	devToolbar: { enabled: false },
 });
