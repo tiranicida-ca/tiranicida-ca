@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+npm run secrets:check
+npm run guard:root

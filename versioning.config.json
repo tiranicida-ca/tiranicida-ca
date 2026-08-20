@@ -1,0 +1,73 @@
+{
+  "rootPackageJson": "package.json",
+	"packages": ["apps/*"],
+  "changelogFile": "CHANGELOG.md",
+  "conventionalCommits": true,
+  "syncDependencies": false,
+  "ignorePackages": [],
+	"releaseGuard": {
+		"enabled": true,
+		"tagPrefix": "v",
+		"allowBuildMetadata": false,
+		"checkReleaseFloor": true
+	},
+	"extensionConfig": {
+		"cleanup-repo": {
+			"enabled": true,
+			"defaultDestination": "docs",
+			"allowlist": [
+				".agents", ".claude", ".github", ".gitignore", ".husky", ".node-version", ".npmrc", ".nvmrc",
+				"AGENTS.md", "apps", "CHANGELOG.md", "CLAUDE.md", "CONTRIBUTING.md", "docs", "node_modules",
+				"package-lock.json", "package.json", "README.md", "scripts", "SECURITY.md", "turbo.json", "versioning.config.json"
+			]
+		},
+		"readme-maintainer": {
+			"repositoryUrl": "https://github.com/tiranicida-ca/tiranicida-ca",
+			"releasesUrl": "https://github.com/tiranicida-ca/tiranicida-ca/releases"
+		},
+		"secrets-check": { "enabled": true }
+	},
+	"extensions": [],
+  "branchAwareness": {
+    "enabled": false,
+    "defaultBranch": "main",
+    "branches": {
+      "main": {
+        "versionFormat": "semantic",
+        "tagFormat": "v{version}",
+        "syncFiles": [
+          "package.json"
+        ],
+        "environment": "production",
+        "bumpStrategy": "semantic"
+      },
+      "develop": {
+        "versionFormat": "dev",
+        "tagFormat": "v{version}",
+        "syncFiles": [
+          "version.development.json"
+        ],
+        "environment": "development",
+        "bumpStrategy": "dev-build"
+      },
+      "feature/*": {
+        "versionFormat": "feature",
+        "tagFormat": "v{version}",
+        "syncFiles": [
+          "version.development.json"
+        ],
+        "environment": "development",
+        "bumpStrategy": "feature-branch"
+      },
+      "hotfix/*": {
+        "versionFormat": "hotfix",
+        "tagFormat": "v{version}",
+        "syncFiles": [
+          "version.development.json"
+        ],
+        "environment": "development",
+        "bumpStrategy": "hotfix"
+      }
+    }
+  }
+}

@@ -52,13 +52,6 @@
 					"id": "96d472470a3f48caa9b69d7895327553"
 				}
 			],
-			"vars": {
-				"SMTP_HOST": "mail.xn--tlo-fla.com",
-				"SMTP_PORT": "587",
-				"SMTP_USER": "noreply@tiranicida.ca",
-				"SMTP_FROM": "noreply@tiranicida.ca",
-				"SMTP_FROM_NAME": "TLAO"
-			}
 		},
 	},
 }
