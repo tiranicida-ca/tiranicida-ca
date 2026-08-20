@@ -1,14 +1,26 @@
-## Summary
+## Release
 
-- Describe the user-facing change.
+- **Version:** `previous` → `current`
+- **Comparison:** `main...develop`
+- **Promotion:** `develop` → `main`
+
+## Objective
+
+Describe the production outcome of this release.
+
+## Change surface
+
+- List the paths grouped by the affected product, deployment, tooling, and documentation surfaces.
+
+## Included changes
+
+- List the commits included since the release version currently on `main`.
 
 ## Validation
 
-- [ ] `npm run ci`
-- [ ] Secret scan passes
-- [ ] Documentation updated where needed
+- [ ] `pnpm run ci`
+- [ ] `pnpm run secrets:check`
 
 ## Deployment
 
-- [ ] No deployment impact
 - [ ] Deploys automatically after merge to `main`

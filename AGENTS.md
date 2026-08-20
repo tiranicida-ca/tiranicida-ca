@@ -1,13 +1,13 @@
-This is an npm-workspaces monorepo. Its EmDash CMS site is in `apps/site` and is built with Astro and a full admin UI.
+This is a pnpm-workspaces monorepo. Its EmDash CMS site is in `apps/site` and is built with Astro and a full admin UI.
 
 ## Commands
 
 ```bash
-npm run dev                              # Start the site through Turborepo
-npm run ci                               # Run repository guards, typecheck, and build
-npm --workspace @tiranicida-ca/site run build
-npm exec --workspace @tiranicida-ca/site -- emdash types
-npm exec --workspace @tiranicida-ca/site -- emdash seed seed/seed.json --validate
+pnpm run dev                              # Start the site through Turborepo
+pnpm run ci                               # Run repository guards, typecheck, and build
+pnpm --filter @tiranicida-ca/site run build
+pnpm --filter @tiranicida-ca/site exec emdash types
+pnpm --filter @tiranicida-ca/site exec emdash seed seed/seed.json --validate
 ```
 
 The admin UI is at `http://localhost:4321/_emdash/admin`.

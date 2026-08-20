@@ -2,6 +2,18 @@
 
 All notable changes to this project are documented here.
 
+## 0.1.1 - 2026-08-20
+
+### Added
+
+- Displayed the deployed application version in the site footer.
+- Enforced the `develop` → `main` release flow with GitHub branch protection and CI checks.
+
+### Changed
+
+- Migrated workspace tooling, release automation, hooks, and GitHub Actions to pnpm.
+- Added explicit workspace-version synchronization to patch-release automation.
+
 ## 0.1.0 - 2026-08-19
 
 ### Added

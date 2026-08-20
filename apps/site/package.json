@@ -1,6 +1,6 @@
 {
 	"name": "@tiranicida-ca/site",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"private": true,
 	"type": "module",
 	"scripts": {
@@ -8,7 +8,7 @@
 		"build": "astro build",
 		"clean": "node -e \"const fs=require('node:fs'); for (const path of ['.astro','dist']) fs.rmSync(path,{recursive:true,force:true})\"",
 		"deploy": "wrangler deploy",
-		"dev": "astro dev",
+		"dev": "astro dev --force",
 		"preview": "astro preview",
 		"seed": "emdash seed",
 		"typecheck": "astro check"
