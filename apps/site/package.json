@@ -1,37 +1,37 @@
 {
-	"name": "@tiranicida-ca/site",
-	"version": "0.1.1",
-	"private": true,
-	"type": "module",
-	"scripts": {
-		"bootstrap": "emdash init && emdash seed",
-		"build": "astro build",
-		"clean": "node -e \"const fs=require('node:fs'); for (const path of ['.astro','dist']) fs.rmSync(path,{recursive:true,force:true})\"",
-		"deploy": "wrangler deploy",
-		"dev": "node ../../scripts/start-dev-server.mjs",
-		"preview": "astro preview",
-		"seed": "emdash seed",
-		"typecheck": "astro check"
-	},
-	"dependencies": {
-		"@astrojs/cloudflare": "^13.1.7",
-		"@astrojs/react": "^5.0.0",
-		"@emdash-cms/cloudflare": "^0.8.0",
-		"@emdash-cms/plugin-forms": "^0.1.1",
-		"@emdash-cms/plugin-webhook-notifier": "^0.1.2",
-		"astro": "^6.0.1",
-		"emdash": "^0.8.0",
-		"react": "19.2.4",
-		"react-dom": "19.2.4"
-	},
-	"devDependencies": {
-		"@astrojs/check": "^0.9.7",
-		"@cloudflare/workers-types": "^4.20260305.1",
-		"@tiptap/extension-collaboration": "^3.30.2",
-		"@tiptap/y-tiptap": "^3.0.9",
-		"typescript": "^5.9.3",
-		"wrangler": "^4.80.0",
-		"y-protocols": "^1.0.7",
-		"yjs": "^13.6.32"
-	}
+  "name": "@tiranicida-ca/site",
+  "version": "0.1.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bootstrap": "emdash init && emdash seed",
+    "build": "astro build",
+    "clean": "node -e \"const fs=require('node:fs'); for (const path of ['.astro','dist']) fs.rmSync(path,{recursive:true,force:true})\"",
+    "deploy": "wrangler deploy",
+    "dev": "node ../../scripts/start-dev-server.mjs",
+    "preview": "astro preview",
+    "seed": "emdash seed",
+    "typecheck": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^13.1.7",
+    "@astrojs/react": "^5.0.0",
+    "@emdash-cms/cloudflare": "^0.8.0",
+    "@emdash-cms/plugin-forms": "^0.1.1",
+    "@emdash-cms/plugin-webhook-notifier": "^0.1.2",
+    "astro": "^6.0.1",
+    "emdash": "^0.8.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.7",
+    "@cloudflare/workers-types": "^4.20260305.1",
+    "@tiptap/extension-collaboration": "^3.30.2",
+    "@tiptap/y-tiptap": "^3.0.9",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.80.0",
+    "y-protocols": "^1.0.7",
+    "yjs": "^13.6.32"
+  }
 }

@@ -2,7 +2,7 @@
 
 Tiranicida.ca is an EmDash CMS site deployed as a Cloudflare Worker. This repository is a pnpm workspace monorepo managed with Turborepo.
 
-**Current release: `0.1.1`**
+**Current release: `0.1.2`**
 
 ## Workspace layout
 
