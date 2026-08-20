@@ -11,7 +11,7 @@ if (branch !== "develop") {
 }
 
 run(pnpm, ["run", "release:patch"]);
-run("git", ["add", "package.json", "apps/site/package.json", "CHANGELOG.md", "README.md", "pnpm-lock.yaml"]);
+run("git", ["add", "package.json", "apps/site/package.json", "CHANGELOG.md", "README.md", "pnpm-lock.yaml", "scripts/sync-release-readme.mjs", "scripts/sync-workspace-versions.mjs", "scripts/verify-workspace-versions.mjs"]);
 
 try {
 	output("git", ["diff", "--cached", "--quiet"]);

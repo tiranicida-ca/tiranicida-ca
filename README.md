@@ -2,7 +2,7 @@
 
 Tiranicida.ca is an EmDash CMS site deployed as a Cloudflare Worker. This repository is a pnpm workspace monorepo managed with Turborepo.
 
-**Current release: `0.1.0`**
+**Current release: `0.1.1`**
 
 ## Workspace layout
 
@@ -47,7 +47,7 @@ Only two long-lived branches exist: `develop` and `main`. All development commit
 
 Local Husky guards reject development work outside `develop` and direct pushes to `main`. GitHub CI also fails every `main` pull request whose source is not `develop`; branch protection requires that check before merge.
 
-The Cloudflare workflow deploys automatically on pushes to `main` (normally through merged pull requests) and can be dispatched manually. Add `CLOUDFLARE_API_TOKEN` as a GitHub Actions secret with permission to deploy this Worker.
+The Cloudflare workflow deploys automatically on pushes to `main` (normally through merged pull requests) and can be dispatched manually. It is the sole production deployment path. Cloudflare Workers Builds validates and uploads preview versions for non-`main` branches. Add `CLOUDFLARE_API_TOKEN` as a GitHub Actions secret with permission to deploy this Worker.
 
 ## Admin email
 

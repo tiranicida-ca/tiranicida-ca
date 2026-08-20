@@ -36,7 +36,8 @@
         "versionFormat": "semantic",
         "tagFormat": "v{version}",
         "syncFiles": [
-          "package.json"
+          "package.json",
+          "apps/site/package.json"
         ],
         "environment": "production",
         "bumpStrategy": "semantic"
@@ -45,7 +46,8 @@
         "versionFormat": "semantic",
         "tagFormat": "v{version}",
         "syncFiles": [
-          "package.json"
+          "package.json",
+          "apps/site/package.json"
         ],
         "environment": "development",
         "bumpStrategy": "semantic"

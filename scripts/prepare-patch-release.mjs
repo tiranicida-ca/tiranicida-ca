@@ -5,5 +5,6 @@ const run = (args) => execFileSync(pnpm, args, { stdio: "inherit" });
 
 run(["run", "guard:release"]);
 run(["exec", "versioning", "patch", "--branch-aware", "--target-branch", "main", "--no-commit", "--no-tag"]);
-run(["exec", "versioning", "update-readme"]);
+run(["run", "sync:versions"]);
+run(["run", "sync:release-readme"]);
 run(["run", "release:check"]);
