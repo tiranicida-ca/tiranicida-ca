@@ -5,7 +5,7 @@ import { formsPlugin } from "@emdash-cms/plugin-forms";
 // import { webhookNotifierPlugin } from "@emdash-cms/plugin-webhook-notifier";
 import { defineConfig, fontProviders } from "astro/config";
 import emdash from "emdash/astro";
-import { resendEmailPlugin } from "./src/plugins/resend-email";
+import { emailRelayPlugin } from "./src/plugins/email-relay";
 
 export default defineConfig({
 	output: "server",
@@ -19,7 +19,7 @@ export default defineConfig({
 		emdash({
 			database: d1({ binding: "DB", session: "auto" }),
 			storage: r2({ binding: "MEDIA" }),
-			plugins: [formsPlugin(), resendEmailPlugin()],
+			plugins: [formsPlugin(), emailRelayPlugin()],
 			// Sandboxed plugins + marketplace require paid Workers plan (Dynamic Workers)
 			// sandboxed: [webhookNotifierPlugin()],
 			// sandboxRunner: sandbox(),
