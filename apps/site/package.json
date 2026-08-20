@@ -8,7 +8,7 @@
 		"build": "astro build",
 		"clean": "node -e \"const fs=require('node:fs'); for (const path of ['.astro','dist']) fs.rmSync(path,{recursive:true,force:true})\"",
 		"deploy": "wrangler deploy",
-		"dev": "node ../../scripts/clear-vite-cache.mjs && astro dev",
+		"dev": "node ../../scripts/start-dev-server.mjs",
 		"preview": "astro preview",
 		"seed": "emdash seed",
 		"typecheck": "astro check"
