@@ -2,6 +2,7 @@ name: CI
 
 on:
   pull_request:
+    branches: [main]
   push:
     branches: [main]
 
@@ -13,6 +14,15 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  pull-request-flow:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Require develop as the only source branch for main
+        run: |
+          test "${{ github.event.pull_request.base.ref }}" = "main"
+          test "${{ github.head_ref }}" = "develop"
+
   verify:
     runs-on: ubuntu-24.04
     steps:

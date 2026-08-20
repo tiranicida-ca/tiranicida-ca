@@ -1,6 +1,7 @@
 ## Summary
 
 - Describe the user-facing change.
+- This pull request must promote `develop` into `main`; feature branches are not accepted.
 
 ## Validation
 

@@ -29,7 +29,7 @@
 	},
 	"extensions": [],
   "branchAwareness": {
-    "enabled": false,
+    "enabled": true,
     "defaultBranch": "main",
     "branches": {
       "main": {
@@ -42,31 +42,13 @@
         "bumpStrategy": "semantic"
       },
       "develop": {
-        "versionFormat": "dev",
+        "versionFormat": "semantic",
         "tagFormat": "v{version}",
         "syncFiles": [
-          "version.development.json"
+          "package.json"
         ],
         "environment": "development",
-        "bumpStrategy": "dev-build"
-      },
-      "feature/*": {
-        "versionFormat": "feature",
-        "tagFormat": "v{version}",
-        "syncFiles": [
-          "version.development.json"
-        ],
-        "environment": "development",
-        "bumpStrategy": "feature-branch"
-      },
-      "hotfix/*": {
-        "versionFormat": "hotfix",
-        "tagFormat": "v{version}",
-        "syncFiles": [
-          "version.development.json"
-        ],
-        "environment": "development",
-        "bumpStrategy": "hotfix"
+        "bumpStrategy": "semantic"
       }
     }
   }

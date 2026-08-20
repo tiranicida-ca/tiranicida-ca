@@ -1,2 +1,3 @@
 #!/usr/bin/env sh
+npm run guard:push
 npm run ci

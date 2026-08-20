@@ -1,3 +1,4 @@
 #!/usr/bin/env sh
+npm run guard:branch
 npm run secrets:check
 npm run guard:root

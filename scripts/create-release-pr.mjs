@@ -6,8 +6,8 @@ const output = (command, args) => execFileSync(command, args, { encoding: "utf8"
 const run = (command, args) => execFileSync(command, args, { stdio: "inherit" });
 const branch = output("git", ["branch", "--show-current"]);
 
-if (!branch || branch === "main") {
-	throw new Error("Create and switch to a release branch before opening a release PR.");
+if (branch !== "develop") {
+	throw new Error("Release pull requests must be created from develop to main.");
 }
 
 run(npm, ["run", "release:patch"]);
@@ -22,8 +22,8 @@ try {
 
 const version = JSON.parse(readFileSync("package.json", "utf8")).version;
 run("git", ["commit", "-m", `🔖 chore(release): v${version}`]);
-run("git", ["push", "--set-upstream", "origin", branch]);
+run("git", ["push", "--set-upstream", "origin", "develop"]);
 run("gh", [
-	"pr", "create", "--base", "main", "--title", `🔖 chore(release): v${version}`,
+	"pr", "create", "--base", "main", "--head", "develop", "--title", `🔖 chore(release): v${version}`,
 	"--body", `## Summary\n\n- Prepare release v${version}.\n- Synchronize workspace versions, changelog, and README.\n\n## Validation\n\n- npm run release:check`,
 ]);

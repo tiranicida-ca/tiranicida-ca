@@ -17,6 +17,8 @@ scripts/      Release and repository guard automation
 - Node.js `22.22.2` (see `.nvmrc`)
 - npm `>=10.9.0 <11`
 
+This repository uses npm workspaces. Run `npm run dev`; `pnpm run dev` is intentionally rejected by the `packageManager` setting.
+
 ## Development
 
 ```bash
@@ -39,7 +41,11 @@ Husky runs the secret and root-hygiene guards before each commit. CI also runs G
 
 ## Releases and deployment
 
-`@edcalderon/versioning` keeps the root and workspace versions synchronized. Use `npm run release:pr` to prepare the next patch version, validate it, commit it, push it, and open its pull request. `npm run release:patch` is available when you want to review the generated release changes before creating the PR. After merge, update your local `main` branch and run `npm run release:tag` to create a validated tag.
+Only two long-lived branches exist: `develop` and `main`. All development commits go to `develop`; `main` only receives the `develop` → `main` release pull request. Do not create feature, hotfix, or release branches.
+
+`@edcalderon/versioning` keeps the root and workspace versions synchronized. From an up-to-date `develop` branch, use `npm run release:pr` to prepare the next patch version, validate it, commit it, push `develop`, and open the required `develop` → `main` pull request. Use `npm run release:patch` only when you want to inspect the generated release changes before committing them on `develop`. Merge the release PR with a merge commit. After merge, update local `main` and run `npm run release:tag` to create a validated tag.
+
+Local Husky guards reject development work outside `develop` and direct pushes to `main`. GitHub CI also fails every `main` pull request whose source is not `develop`; branch protection requires that check before merge.
 
 The Cloudflare workflow deploys automatically on pushes to `main` (normally through merged pull requests) and can be dispatched manually. Add `CLOUDFLARE_API_TOKEN` as a GitHub Actions secret with permission to deploy this Worker.
 

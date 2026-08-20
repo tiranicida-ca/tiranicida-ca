@@ -5,9 +5,7 @@ const npm = process.platform === "win32" ? "npm.cmd" : "npm";
 const version = JSON.parse(readFileSync("package.json", "utf8")).version;
 const output = (command, args) => execFileSync(command, args, { encoding: "utf8" }).trim();
 
-if (output("git", ["branch", "--show-current"]) !== "main") {
-	throw new Error("Release tags can only be created from the local main branch.");
-}
+execFileSync(npm, ["run", "guard:tag"], { stdio: "inherit" });
 
 if (output("git", ["status", "--porcelain"]) !== "") {
 	throw new Error("Commit or stash local changes before creating a release tag.");
