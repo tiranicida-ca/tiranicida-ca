@@ -23,6 +23,16 @@ try {
 const version = JSON.parse(readFileSync("package.json", "utf8")).version;
 run("git", ["commit", "-m", `🔖 chore(release): v${version}`]);
 run("git", ["push", "--set-upstream", "origin", "develop"]);
+
+const existingPrs = JSON.parse(output("gh", [
+	"pr", "list", "--state", "open", "--base", "main", "--head", "develop", "--json", "url",
+]));
+
+if (existingPrs.length > 0) {
+	console.log(`Updated release pull request: ${existingPrs[0].url}`);
+	process.exit(0);
+}
+
 run("gh", [
 	"pr", "create", "--base", "main", "--head", "develop", "--title", `🔖 chore(release): v${version}`,
 	"--body", `## Summary\n\n- Prepare release v${version}.\n- Synchronize workspace versions, changelog, and README.\n\n## Validation\n\n- pnpm run release:check`,
