@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
-npm run guard:push
-npm run ci
+pnpm run guard:push
+pnpm run ci

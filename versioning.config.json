@@ -18,7 +18,7 @@
 			"allowlist": [
 				".agents", ".claude", ".github", ".gitignore", ".husky", ".node-version", ".npmrc", ".nvmrc",
 				"AGENTS.md", "apps", "CHANGELOG.md", "CLAUDE.md", "CONTRIBUTING.md", "docs", "node_modules",
-				"package-lock.json", "package.json", "README.md", "scripts", "SECURITY.md", "turbo.json", "versioning.config.json"
+				"package.json", "pnpm-lock.yaml", "pnpm-workspace.yaml", "README.md", "scripts", "SECURITY.md", "turbo.json", "versioning.config.json"
 			]
 		},
 		"readme-maintainer": {

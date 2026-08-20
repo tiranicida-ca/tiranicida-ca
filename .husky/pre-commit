@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
-npm run guard:branch
-npm run secrets:check
-npm run guard:root
+pnpm run guard:branch
+pnpm run secrets:check
+pnpm run guard:root

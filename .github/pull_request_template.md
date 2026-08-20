@@ -5,7 +5,7 @@
 
 ## Validation
 
-- [ ] `npm run ci`
+- [ ] `pnpm run ci`
 - [ ] Secret scan passes
 - [ ] Documentation updated where needed
 
