@@ -924,6 +924,11 @@
 									"_key": "vitalik-etherscan",
 									"_type": "link",
 									"href": "https://etherscan.io/address/0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"
+								},
+								{
+									"_key": "ethereum-site",
+									"_type": "link",
+									"href": "https://ethereum.org/"
 								}
 							],
 							"children": [
@@ -944,6 +949,19 @@
 									"_type": "span",
 									"text": "vitalik.eth account on Etherscan",
 									"marks": ["vitalik-etherscan"]
+								},
+								{
+									"_type": "span",
+									"text": "."
+								},
+								{
+									"_type": "span",
+									"text": " For the protocol itself, visit the official "
+								},
+								{
+									"_type": "span",
+									"text": "Ethereum.org site",
+									"marks": ["ethereum-site"]
 								},
 								{
 									"_type": "span",
