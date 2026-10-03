@@ -4,6 +4,9 @@
 	"main": "./src/worker.ts",
 	"compatibility_date": "2026-02-24",
 	"compatibility_flags": ["nodejs_compat"],
+	"vars": {
+		"EMAIL_RELAY_URL": "https://relay.tiranicida.ca"
+	},
 	"d1_databases": [
 		{
 			"binding": "DB",
@@ -33,6 +36,9 @@
 	// ],
 	"env": {
 		"production": {
+			"vars": {
+				"EMAIL_RELAY_URL": "https://relay.tiranicida.ca"
+			},
 			"d1_databases": [
 				{
 					"binding": "DB",
