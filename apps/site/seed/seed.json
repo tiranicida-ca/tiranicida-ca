@@ -78,7 +78,8 @@
 			"terms": [
 				{ "slug": "development", "label": "Development" },
 				{ "slug": "design", "label": "Design" },
-				{ "slug": "notes", "label": "Notes" }
+				{ "slug": "notes", "label": "Notes" },
+				{ "slug": "blockchain", "label": "Blockchain" }
 			]
 		},
 		{
@@ -91,7 +92,10 @@
 				{ "slug": "webdev", "label": "Web Development" },
 				{ "slug": "opinion", "label": "Opinion" },
 				{ "slug": "tools", "label": "Tools" },
-				{ "slug": "creativity", "label": "Creativity" }
+				{ "slug": "creativity", "label": "Creativity" },
+				{ "slug": "ethereum", "label": "Ethereum" },
+				{ "slug": "bitcoin", "label": "Bitcoin" },
+				{ "slug": "web3", "label": "Web3" }
 			]
 		}
 	],
@@ -750,6 +754,209 @@
 				"taxonomies": {
 					"category": ["notes"],
 					"tag": ["opinion"]
+				}
+			},
+			{
+				"id": "post-etherun",
+				"slug": "etherun-the-universal-blockchain",
+				"status": "published",
+				"data": {
+					"title": "ETHERUN: THE UNIVERSAL BLOCKCHAIN",
+					"excerpt": "Ethereum is no longer merely a blockchain to transact on. It is becoming a universal coordination layer: a multiversal network of rollups, applications, communities, and assets that keeps forcing the rest of crypto to evolve.",
+					"featured_image": {
+						"$media": {
+							"url": "https://images.unsplash.com/photo-1639322537228-f710d846310a?w=1200&h=800&fit=crop",
+							"alt": "Abstract blue network lines representing a connected blockchain ecosystem",
+							"filename": "etherun-universal-blockchain.jpg"
+						}
+					},
+					"content": [
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "The most important thing happening in crypto is not a new token, a new exchange, or another chain promising to be faster. It is a change in what Ethereum means. Vitalik Buterin's long-running argument that Ethereum is becoming more than a blockchain is not marketing language. It is an accurate description of a system that now coordinates an entire universe of networks, applications, assets, and communities."
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "Call it ETHERUN: Ethereum as the universal blockchain. Not a single chain that must do everything itself, but a shared settlement and coordination layer from which many specialized worlds can grow. Mainnet, rollups, layer-two networks, application-specific chains, wallets, stablecoins, decentralized identity, and open financial protocols are not separate stories anymore. They are chapters of one expanding system."
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "h2",
+							"children": [{ "_type": "span", "text": "A decade is enough to see the pattern" }]
+						},
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "Ethereum launched in 2015. After a decade of upgrades, crises, experiments, and uncomfortable reinvention, the original question—can blockchains run programmable money?—has expanded into a much larger one: can a shared protocol let strangers coordinate value, ownership, computation, and decisions without asking one institution for permission?"
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "That is why the word blockchain now feels too small. A blockchain sounds like a ledger: useful, durable, and limited. Ethereum increasingly behaves like a public operating environment. It gives developers a credible place to deploy rules, gives users portable assets and identities, and gives other networks a common point of trust. Its most important product is not any one application. It is the ability to make new applications composable with everything that came before."
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "blockquote",
+							"children": [
+								{
+									"_type": "span",
+									"text": "A universal blockchain is not the one chain that does everything. It is the ecosystem that makes new coordination possible."
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "h2",
+							"children": [{ "_type": "span", "text": "The multiverse is the feature" }]
+						},
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "The word multiversal matters because Ethereum's future is not a single, polished user experience. It is a federation of different environments with different tradeoffs. A payments network can optimize for cheap, fast transfers. A gaming world can optimize for throughput. A financial protocol can optimize for composability and auditability. They can feel different at the surface while sharing a deeper economic and technical gravity."
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "This architecture can re-evolutionize industries that have spent decades treating coordination as a private service: finance, ticketing, supply chains, media rights, gaming economies, creator royalties, scientific funding, and eventually parts of identity and governance. The point is not that every industry needs a token. The point is that programmable ownership and open settlement change who can participate, how quickly systems can interoperate, and how many new businesses can be built on top."
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "h2",
+							"children": [{ "_type": "span", "text": "Ethereum is a pressure system for the whole industry" }]
+						},
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "Ethereum does not need to defeat Bitcoin to shape Bitcoin's future. Its existence forces Bitcoin developers to answer harder questions about programmability, scaling, fees, custody, and the role of applications on top of a monetary network. The same is true for every competitor: a new chain can differentiate, or it can eventually rediscover the pull of open liquidity, credible neutrality, and shared settlement."
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "That is Ethereum's quiet power. It is not merely competing for transactions; it is setting the questions that every serious protocol must answer. What is the settlement layer? Who can verify the rules? How portable is ownership? Can a user move without asking permission? Can a developer build on an economy that is larger than their own company? The answers determine whether a network is a temporary product or part of the ultra-sound-money ecosystem."
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "h2",
+							"children": [{ "_type": "span", "text": "The risk is fragmentation" }]
+						},
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "Universal does not mean inevitable. Ethereum's biggest threat is that its multiverse becomes a maze: too many bridges, too many fragmented balances, too many invisible trust assumptions. The vision only works if the complexity is absorbed by infrastructure while the user experience becomes simpler. A universal system that requires users to understand every layer is universal in theory and unusable in practice."
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "normal",
+						"children": [
+								{
+									"_type": "span",
+									"text": "So the next era will not be won by the chain with the loudest slogan. It will be won by the ecosystem that hides its own complexity, preserves credible neutrality, and makes the open path the easiest path. Ethereum has the strongest claim to that role because it has already become the place where the rest of the industry tests its assumptions."
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "normal",
+							"children": [
+								{
+									"_type": "span",
+									"text": "ETHERUN, then, is not a victory lap. It is a thesis: Ethereum can become the universal blockchain by becoming the universal meeting point. Bitcoin may remain the clearest monetary asset. Other networks may win particular categories. But if the future is multiversal, the protocol that lets those worlds settle, compose, and belong to the same open economy will define the terrain. Ethereum is already building that terrain."
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"style": "normal",
+							"markDefs": [
+								{
+									"_key": "vitalik-site",
+									"_type": "link",
+									"href": "https://vitalik.eth.limo/"
+								},
+								{
+									"_key": "vitalik-etherscan",
+									"_type": "link",
+									"href": "https://etherscan.io/address/0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"
+								}
+							],
+							"children": [
+								{
+									"_type": "span",
+									"text": "For a primary source, read "
+								},
+								{
+									"_type": "span",
+									"text": "Vitalik Buterin's personal site",
+									"marks": ["vitalik-site"]
+								},
+								{
+									"_type": "span",
+									"text": " and inspect the public "
+								},
+								{
+									"_type": "span",
+									"text": "vitalik.eth account on Etherscan",
+									"marks": ["vitalik-etherscan"]
+								},
+								{
+									"_type": "span",
+									"text": "."
+								}
+							]
+						}
+					]
+				},
+				"bylines": [{ "byline": "byline-editorial" }],
+				"taxonomies": {
+					"category": ["blockchain"],
+					"tag": ["opinion", "ethereum", "bitcoin", "web3"]
 				}
 			},
 			{
